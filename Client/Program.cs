@@ -1,4 +1,5 @@
 using BlazorChatApp.Client;
+using BlazorChatApp.Client.Manager;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
@@ -15,7 +16,7 @@ builder.Services.AddHttpClient("BlazorChatApp.ServerAPI", client => client.BaseA
 // Supply HttpClient instances that include access tokens when making requests to the server project
 builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("BlazorChatApp.ServerAPI"));
 builder.Services.AddMudServices(c => { c.SnackbarConfiguration.PositionClass = Defaults.Classes.Position.BottomRight; });
-
+builder.Services.AddTransient<IChatManager, ChatManager>();
 builder.Services.AddApiAuthorization();
 
 await builder.Build().RunAsync();

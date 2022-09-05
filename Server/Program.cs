@@ -1,3 +1,4 @@
+using BlazorChatApp.Server;
 using BlazorChatApp.Server.Data;
 using BlazorChatApp.Server.Models;
 using Microsoft.AspNetCore.Authentication;
@@ -24,6 +25,7 @@ builder.Services.AddAuthentication()
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddSignalR();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -54,5 +56,12 @@ app.UseAuthorization();
 app.MapRazorPages();
 app.MapControllers();
 app.MapFallbackToFile("index.html");
+app.MapHub<SignalRHub>("/signalRHub");
+//app.UseEndpoints(endpoints =>
+//{
+//    endpoints.MapRazorPages();
+//    endpoints.MapControllers();
+//    endpoints.MapFallbackToFile("index.html");
 
+//});
 app.Run();
