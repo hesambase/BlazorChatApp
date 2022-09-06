@@ -19,6 +19,7 @@ namespace BlazorChatApp.Client.Pages
         [Parameter] public string CurrentUserId { get; set; }
         [Parameter] public string CurrentUserEmail { get; set; }
         private List<ChatMessage> messages = new List<ChatMessage>();
+
         private async Task SubmitAsync()
         {
             if (!string.IsNullOrEmpty(CurrentMessage) && !string.IsNullOrEmpty(ContactId))
