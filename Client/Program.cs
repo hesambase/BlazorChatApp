@@ -1,5 +1,5 @@
 using BlazorChatApp.Client;
-using BlazorChatApp.Client.Manager;
+using BlazorChatApp.Client.Managers;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;

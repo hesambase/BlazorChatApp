@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorChatApp.Server", "Server\BlazorChatApp.Server.csproj", "{7DA6ACEF-8046-46D8-A0B8-B89FC9C30886}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorChatApp.Server", "Server\BlazorChatApp.Server.csproj", "{7DA6ACEF-8046-46D8-A0B8-B89FC9C30886}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorChatApp.Client", "Client\BlazorChatApp.Client.csproj", "{B1FF5B63-22FA-429A-A8C6-75D82195ED08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorChatApp.Client", "Client\BlazorChatApp.Client.csproj", "{B1FF5B63-22FA-429A-A8C6-75D82195ED08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorChatApp.Shared", "Shared\BlazorChatApp.Shared.csproj", "{2031AF5F-88DF-449C-A86E-2FE6888950D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorChatApp.Shared", "Shared\BlazorChatApp.Shared.csproj", "{2031AF5F-88DF-449C-A86E-2FE6888950D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
